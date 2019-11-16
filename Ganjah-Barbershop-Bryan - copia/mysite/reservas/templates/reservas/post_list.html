@@ -1,0 +1,13 @@
+{% extends 'reservas/base.html' %}
+
+{% block content %}
+{% for post in posts %}
+    <div class="post">
+        <div class="date">
+                <p>Fecha reserva: {{ post.fecha_reserva }}</p>
+        </div>
+        <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.nombre }}</a></h2>
+        <p>+569 {{ post.celular|linebreaksbr }}</p>
+    </div>
+{% endfor %}
+{% endblock %}

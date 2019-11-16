@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reservas Barber</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <link rel="stylesheet" href="GanjahBarber.html">
+    <link rel="stylesheet" href="css/estiloreservas.css">
+</head>
+<body>
+    <form id="contacto" name="contacto" class="formulario" action="" method="POST">
+    <h2> Reserva Tu Horario</h2>
+    <input type="text" id="nombre" name="nombre" size="30" minlength="3" maxlength="40" placeholder="Ingrese nombre"><br>    
+    <input type="email" id="mail" name="mail" size="30" placeholder="Ingrese mail" onblur="validarCorreo()"><br>
+    <label for="telefono">+569</label><input type="number" id="telefono" name="telefono"><br>
+    <input type="date" id="horario" name="horario de reserva" placeholder="Horario de reserva">
+    <textarea name="mensaje" placeholder="Informar algo sobre la reserva" ></textarea>
+    <input type="button" value="Enviar" id="boton">
+
+    <script src="js/reservas.js"></script>
+</body>
+</html>
